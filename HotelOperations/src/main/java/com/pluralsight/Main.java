@@ -12,5 +12,15 @@ public class Main {
         Room room114 = new Room(1,189, false, false);
         System.out.println(room114.isAvailable());
 
+        room114.checkIn();
+
+        System.out.println(room114.isAvailable());
+
+        room114.checkOut();
+
+        System.out.println(room114.isAvailable());
+
+
+
     }
 }
