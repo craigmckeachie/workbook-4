@@ -41,6 +41,9 @@ public class Room {
 
     //DO
     public void checkIn(){
+        if(this.isOccupied){
+            throw new IllegalStateException("Cannot check in. Room already occupied");
+        }
         this.isOccupied = true;
         this.isDirty = true;
     }
